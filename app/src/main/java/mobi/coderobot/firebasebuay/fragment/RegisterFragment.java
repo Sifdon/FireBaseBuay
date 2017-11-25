@@ -4,11 +4,14 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.EditText;
 
 import mobi.coderobot.firebasebuay.MainActivity;
 import mobi.coderobot.firebasebuay.R;
@@ -18,6 +21,10 @@ import mobi.coderobot.firebasebuay.R;
  */
 
 public class RegisterFragment extends Fragment {
+    //    Explicit
+    private String tag = "25Nov1";
+    private String nameString, emailString, passwordString;
+
 
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
@@ -32,13 +39,40 @@ public class RegisterFragment extends Fragment {
     }//Main Method
 
     @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        if (item.getItemId() == R.id.itemSave) {
+            CheckSpace();
+            return true;
+        }
+
+
+        return super.onOptionsItemSelected(item);
+    }
+
+    private void CheckSpace() {
+
+        Log.d(tag, "CheckSpace Work");
+
+//        Initial View
+        EditText nameEditText = getView().findViewById(R.id.edtName);
+        EditText emailEditText = getView().findViewById(R.id.edtEmail);
+        EditText passwordEditText = getView().findViewById(R.id.edtPassword);
+
+//        Get Value EditText
+        nameString = nameEditText.getText().toString().trim();
+        emailString = emailEditText.getText().toString().trim();
+        passwordString = passwordEditText.getText().toString().trim();
+
+
+    }//Check Space
+
+    @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
-        inflater.inflate(R.menu.menu_save,menu);
+        inflater.inflate(R.menu.menu_save, menu);
 
 
         super.onCreateOptionsMenu(menu, inflater);
     }
-
 
 
     private void createToolbar() {
