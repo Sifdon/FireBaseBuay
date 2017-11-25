@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "700104604752",
+    "firebase_url": "https://fir-buay.firebaseio.com",
+    "project_id": "fir-buay",
+    "storage_bucket": "fir-buay.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:700104604752:android:426687fd8eb308b1",
+        "android_client_info": {
+          "package_name": "mobi.coderobot.firebasebuay"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "700104604752-kquqo9recpsl23se0la53hd8aor76pqe.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "mobi.coderobot.firebasebuay",
+            "certificate_hash": "f23e44e7d62ef1c3ef27047820f2e8fb9d5d0cf4"
+          }
+        },
+        {
+          "client_id": "700104604752-a1ikf7dvoanqgkp4uvookod4af83o3rj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAwxo88B9flKBiM3DVbWE_7M5GybHID3as"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "700104604752-a1ikf7dvoanqgkp4uvookod4af83o3rj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
