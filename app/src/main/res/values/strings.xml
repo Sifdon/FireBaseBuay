@@ -5,5 +5,7 @@
     <string name="login">Login</string>
     <string name="new_register">New Register</string>
     <string name="display">Display</string>
-    <string name="display_name">Display Name</string>
+
+    <string name="title">Register</string>
+    <string name="sup_register">Fill Evey Blank</string>
 </resources>
